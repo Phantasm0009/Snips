@@ -36,8 +36,8 @@ function buildMsg() {
     headerIcon.id = "msg-icon";
     headerIcon.classList.add("material-icons", "msg-icon");
     //if installed as Chrome extension
-    if(document.documentElement.clientHeight <= 600) {
-            headerIcon.style.paddingTop = "5px";
+    if(isExtension()) {
+        headerIcon.style.paddingTop = "5px";
     }
     // icon.innerHTML = info;
     divHeader.appendChild(headerIcon);

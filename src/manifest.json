@@ -6,11 +6,12 @@
     "author": "Toby Butchart",
     "action":{
         "default_popup": "index.html",
-        "default_title": "Snips"
-    },
-    "browser_action": {
-        "default_icon": "img/snips-32.png",
-        "popup": "index.html"  
+        "default_title": "Snips",
+        "default_icon": {            
+            "32": "img/snips-32.png",
+            "48": "img/snips-48.png",
+            "128": "img/snips-96.png"
+        }
     },
     "icons": {
         "32": "img/snips-32.png",

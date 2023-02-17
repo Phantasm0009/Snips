@@ -16,7 +16,7 @@ window.onclick = function(event) {
 }
 
 //if installed as Chrome extension
-if(document.documentElement.clientHeight <= 600) {
+if(typeof isExtension === "function" && isExtension()) {
     let modals = document.getElementsByClassName("modal");
     let i;
 

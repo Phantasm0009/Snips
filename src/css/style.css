@@ -6,8 +6,6 @@
 /* generic components start */
 body {
     font-family: "Verdana", sans-serif;
-    min-width: 600px;
-    min-height: 800px;
 }
 
 button {

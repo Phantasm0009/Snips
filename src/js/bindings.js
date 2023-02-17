@@ -25,7 +25,7 @@ document.getElementById('btn-edit-snippet').onclick = function(){snippetToModal(
 document.getElementById('btn-settings').onclick = function(){showModal('settings-modal')};
 
 document.getElementById('inp-import-settings').onchange = function(){importSettings(this)};
-document.getElementById('inp-import-snippets').onchange = function(){importSettings(this)};
+document.getElementById('inp-import-snippets').onchange = function(){importSnippets(this)};
 
 /* global styles for msg box */
 MSG_HEADER_FONT = "'Permanent Marker', serif";
@@ -48,3 +48,9 @@ function clickImportSnippets() {
 
 settingsToScreen();
 snippetsToScreen();
+
+//if installed as Chrome extension
+if(isExtension()) {
+    document.body.style.minWidth = "600px";
+    document.body.style.minHeight = "800px";
+}
