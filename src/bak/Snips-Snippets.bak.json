@@ -38,5 +38,13 @@
     "description": "Checks to see if a directory exists",
     "snippet": "if exist \"C:\\Temp\\\" (\n  //do something...\n) ",
     "notes": "Note the \\ at the end of the path. Will look for file existence otherwise\n\nCan also precede exist with not to check file doesn't exist"
+  },
+  {
+    "id": 6,
+    "groupName": "Git",
+    "title": "Update Submodules",
+    "description": "Updates all submodules in a repo",
+    "snippet": "git submodule update --remote --merge",
+    "notes": ""
   }
 ]
