@@ -218,6 +218,12 @@ table {
     text-align: center;
 }
 
+@media screen and (max-width: 500px) {
+    .hide-xs{
+        display: none;
+    }
+}
+
 /* single controls start */
 #btn-refresh-data {
     float: right;

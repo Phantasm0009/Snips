@@ -1,9 +1,10 @@
 /* templates start */
 class Settings {
-    constructor(allowModalBGClick, allowAccordionClick, rememberIndex) {
+    constructor(allowModalBGClick, allowAccordionClick, rememberIndex, showDebug) {
         this.allowModalBGClick = allowModalBGClick;
         this.allowAccordionClick = allowAccordionClick;
         this.rememberIndex = rememberIndex;
+        this.showDebug = showDebug;
     }
 }
 /* templates end */
@@ -12,7 +13,7 @@ const settingsStr = "settings";
 let settings = getSettings();
 
 function getSettings() {
-    let ret = new Settings(false, false, false);
+    let ret = new Settings(false, false, false, false);
 
     if (localStorage.getItem(settingsStr) != null) {
         ret = JSON.parse(localStorage.getItem(settingsStr));
@@ -64,6 +65,7 @@ function settingsToScreen() {
     });
 
     document.getElementById('lbl-settings').value = JSON.stringify(settings, null, 2);
+    document.getElementById('btn-tab-debug').style.display = settings.showDebug ? "block" : "none";
 }
 
 function clearSettings() {
@@ -82,7 +84,7 @@ function onloadImportSettings(s) {
     saveSettings(true);
 }
 
-function importSettings(input) {    
+function importSettings(input) {
     importObj(input, onloadImportSettings, false);
 }
 

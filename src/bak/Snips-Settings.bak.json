@@ -1,5 +1,6 @@
 {
   "allowModalBGClick": true,
   "allowAccordionClick": false,
-  "rememberIndex": true
+  "rememberIndex": true,
+  "showDebug": false
 }

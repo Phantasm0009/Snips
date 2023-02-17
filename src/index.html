@@ -10,8 +10,8 @@
 	<link rel="icon" type="image/png" href="img/snips.ico">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Permanent+Marker">
-	<link rel="stylesheet" href="msg/css/msg.min.css">
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="msg/css/msg.min.css?v=1.0.0">
+	<link rel="stylesheet" href="css/style.min.css?v=1.0.0">
 </head>
 <body>
 	<!-- add/edit snippet modal start -->
@@ -81,6 +81,10 @@
 							<td><label for="lbl-settings-remember-index">Remember selected snippet</label></td>
 							<td><input type="checkbox" id="lbl-settings-remember-index" data-settings="true" data-setting="rememberIndex"></td>
 						</tr>
+						<tr>
+							<td><label for="lbl-settings-show-debug">Show debug info</label></td>
+							<td><input type="checkbox" id="lbl-settings-remember-index" data-settings="true" data-setting="showDebug"></td>
+						</tr>
 					</table>
 				</div>
 				<div id="Data" class="tabcontent">
@@ -116,17 +120,19 @@
 					<textarea id="lbl-snippets" rows="4" cols="50"></textarea>
 					<button id="btn-clear-snippets" class="font-branded font-md">clear&nbsp;<i class="material-icons">clear</i></button>
 					<button id="btn-save-snippets" class="font-branded font-md">save&nbsp;<i class="material-icons">save</i></button>
-					<hr class="line-dark">
-					<label>Test popup</label>
-					<br>
-					<button id="btn-test-msg-success" class="font-branded font-md"><i class="material-icons">check_circle</i></button>
-					<button id="btn-test-msg-info" class="font-branded font-md"><i class="material-icons">info</i></button>
-					<button id="btn-test-msg-warning" class="font-branded font-md"><i class="material-icons">warning</i></button>
-					<button id="btn-test-msg-error" class="font-branded font-md"><i class="material-icons">error</i></button>
+					<span class="hide-xs">
+						<hr class="line-dark">
+						<label>Test popup</label>
+						<br>
+						<button id="btn-test-msg-success" class="font-branded font-md"><i class="material-icons">check_circle</i></button>
+						<button id="btn-test-msg-info" class="font-branded font-md"><i class="material-icons">info</i></button>
+						<button id="btn-test-msg-warning" class="font-branded font-md"><i class="material-icons">warning</i></button>
+						<button id="btn-test-msg-error" class="font-branded font-md"><i class="material-icons">error</i></button>
+					</span>
 				</div>
 				<div id="About" class="tabcontent">
 					<p class="font-branded font-lg padding-l-md font-clr-dark">Snips</p>
-					<img class="padding-t-xs padding-r-md float-right" src="img/a2-sm.png" alt="Snips">
+					<img class="padding-t-xs padding-r-md float-right hide-xs" src="img/a2-sm.png" alt="Snips">
 					<p class="font-branded font-sm padding-l-md font-clr-dark">Version:&nbsp;<span id="about-version"></span></p>
 					<p class="font-branded font-sm padding-l-md font-clr-dark">&copy;&nbsp;<span id="about-year"></span></p>
 				</div>
@@ -176,22 +182,22 @@
 	<!-- main footer start -->
 	<div class="main-footer bg-clr-med">
 		<div class="main-footer-container">
-			<button class="font-branded font-md wdth-30" id="btn-add-snippet">add&nbsp;<i class="material-icons">add</i></button>
-			<button class="font-branded font-md wdth-30" id="btn-edit-snippet">edit&nbsp;<i class="material-icons">edit</i></button>
-			<button class="font-branded font-md wdth-30" id="btn-settings">settings&nbsp;<i class="material-icons">settings</i></button>
+			<button class="font-branded font-md wdth-30" id="btn-add-snippet"><span class="hide-xs">add&nbsp;</span><i class="material-icons">add</i></button>
+			<button class="font-branded font-md wdth-30" id="btn-edit-snippet"><span class="hide-xs">edit&nbsp;</span><i class="material-icons">edit</i></button>
+			<button class="font-branded font-md wdth-30" id="btn-settings"><span class="hide-xs">settings&nbsp;</span><i class="material-icons">settings</i></button>
 		</div>
 	</div>
 	<!-- main footer end -->
 
-	<script type="text/javascript" src="msg/js/chrome-ext.min.js"></script>
-	<script type="text/javascript" src="msg/js/msg.min.js"></script>
-	<script type="text/javascript" src="js/settings.min.js"></script>
-	<script type="text/javascript" src="js/accordion.min.js"></script>
-	<script type="text/javascript" src="js/snippets.min.js"></script>
-	<script type="text/javascript" src="js/modal.min.js"></script>
-	<script type="text/javascript" src="js/nav-bar.min.js"></script>
-	<script type="text/javascript" src="js/page-control.min.js"></script>
-	<script type="text/javascript" src="js/data.min.js"></script>
-	<script type="text/javascript" src="js/meta.min.js"></script>
-	<script type="text/javascript" src="js/bindings.min.js"></script>
+	<script type="text/javascript" src="msg/js/chrome-ext.min.js?v=1.0.0"></script>
+	<script type="text/javascript" src="msg/js/msg.min.js?v=1.0.0"></script>
+	<script type="text/javascript" src="js/settings.min.js?v=1.0.0"></script>
+	<script type="text/javascript" src="js/accordion.min.js?v=1.0.0"></script>
+	<script type="text/javascript" src="js/snippets.min.js?v=1.0.0"></script>
+	<script type="text/javascript" src="js/modal.min.js?v=1.0.0"></script>
+	<script type="text/javascript" src="js/nav-bar.min.js?v=1.0.0"></script>
+	<script type="text/javascript" src="js/page-control.min.js?v=1.0.0"></script>
+	<script type="text/javascript" src="js/data.min.js?v=1.0.0"></script>
+	<script type="text/javascript" src="js/meta.min.js?v=1.0.0"></script>
+	<script type="text/javascript" src="js/bindings.min.js?v=1.0.0"></script>
 </body>
