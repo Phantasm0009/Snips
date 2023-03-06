@@ -76,7 +76,7 @@ function getSnippetByID(id) {
 
     for (let i = 0; i < snippets.length; i++) {
         if (snippets[i].id == id) {
-            ret = snippet;
+            ret = snippet[i];
             break;
         }
     }
