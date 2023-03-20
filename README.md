@@ -27,9 +27,3 @@ A Chrome extension to help save handy code snippets.
 This is meant to be installed as a Chrome extension, so will look a little bulky if viewed as a web page.  
 
 Allows a user to add and categorise handy code snippets for when you just can't remember how to get the local IP address on a Linux terminal...
-
-## Roadmap
-Date | Issue | Status |
-:--: | ----- | ------ |
-17/02/2023 | Implement search bar functionality for quick searches | incomplete |
-17/02/2023 | Allow imports to append data rather than replace | incomplete |
